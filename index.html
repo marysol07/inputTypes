@@ -10,6 +10,8 @@
     <div class="content">
         <h1>Ice Cream Shoppe</h1>
         <form>
+            <fieldset>
+                <legend>Customer:</legend>
             <div class="row">
                 <div>
                     <label for="firstname">First</label>
@@ -20,7 +22,11 @@
                     <input id="lastname" name="last_name" type="text">
                 </div>
             </div>
+            </fieldset>
             <div>
+                <div class="row">
+                    <fieldset>
+                        <legend>Flavor:</legend>
                 <div>
                     <input type="radio" id="vanilla" name="icecream">
                     <label for="vanilla">Vanilla</label>
@@ -33,8 +39,11 @@
                     <input type="radio" id="chocolate" name="icecream">
                     <label for="chocolate">Chocolate</label>
                 </div>
+                    </fieldset>
             </div>
             <div>
+                <fieldset>
+                    <legend>Size:</legend>
                 <div>
                     <input type="radio" id="small" name="size">
                     <label for="small">Small</label>
@@ -47,11 +56,38 @@
                     <input type="radio" id="large" name="size">
                     <label for="large">Large</label>
                 </div>
+                </fieldset>
             </div>
-                 <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles">
-                 <label for="sprinkles">Sprinkles</label>
-             </div>
-    <div>
+            <div>
+                <fieldset>
+                    <legend>Toppings:</legend>
+                <div>
+                    <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles">
+                    <label for="sprinkles">Sprinkles</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="whippedCream" name="whippedCream" value="whippedCream">
+                    <label for="whippedCream">Whipped Cream</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="caramel" name="caramel" value="caramel">
+                    <label for="caramel">Caramel Sauce</label>
+                </div>
+                </fieldset>
+            </div>
+            <div>
+                <label for="container">Please Choose One</label>
+                <select name="container" id="container">
+                    <option value="cup">Plastic Cup</option>
+                    <option value="sugar">Sugar Cone</option>
+                    <option value="waffle">Waffle Cone</option>
+                    <option value="drippedWaffle">Chocolate Dripped Waffle Cone</option>
+                </select>
+            </div>
+            <div>
+                <label for="SpecialRequests">Special Requests:</label>
+                <textarea id="SpecialRequests" name="SpecialRequests" row="4" cols="10" placeholder="Allergic to peanuts, substitutions, etc."></textarea>
+            </div>
         </form>
     </div>
 </div>
